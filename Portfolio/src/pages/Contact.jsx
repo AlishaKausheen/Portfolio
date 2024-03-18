@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contact = () => {
+  const [form, setForm] = useState({ name: '', email: '' , message: '' })
+  const handleChange = ()=>{}
+
   return (
-    <div>
-      
-    </div>
+    <section className='relative flex lg:flow-row flex-col max-container'>
+      <div className='flex-1 min-w-[50%] flex flex-col'>
+        <h1 className='head-text'>Get in touch</h1>
+        <form
+        className='w-full flex flex-col gap-7 mt-14'>
+          <label className='text-black-500 font-semibold'>
+            Name
+            <input
+              type='text'
+              name='name'
+              className='input'
+              placeholder='Eg. Alice'
+              required
+              value={form.name}
+            onChange={handleChange}/>
+         </label>
+        </form>
+      </div>
+    </section>
   )
 }
 
