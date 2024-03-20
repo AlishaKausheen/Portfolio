@@ -17,7 +17,7 @@ const Contact = () => {
   const handleSubmit = (e) => { 
     e.preventDefault();
     setIsLoading(true);
-    emailjs.sendForm(
+    emailjs.send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
@@ -27,7 +27,7 @@ const Contact = () => {
         to_email: `alishakausheen@gmail.com`,
         message : form.message
       },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+      { publicKey: 'u1ijMc4JUSiBFUI0k' ,}
     ).then(() => {
       setIsLoading(false);
       //success message
