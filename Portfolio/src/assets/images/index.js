@@ -1,15 +1,13 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+import chat from './chat.jpg'
+import food from './Food.jpg'
+import spotify from './spotify.png'
+import Devit from './code.jpg'
 import logo from './logo.svg'
 
 export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
+    chat,
+    food,
+    spotify,
+    Devit,
     logo
 }
