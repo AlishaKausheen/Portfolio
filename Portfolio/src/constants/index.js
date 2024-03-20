@@ -1,4 +1,4 @@
-import { chat, Devit, spotify, food } from "../assets/images";
+import { chat, Devit, spotify, food, gdsc } from "../assets/images";
 import {
     
     contact,
@@ -89,6 +89,21 @@ export const skills = [
     },
     
 ];
+
+export const experiences = [
+    {
+        title: "GDSC Web-Dev Lead",
+        company_name: "GDSC-JKIAPT",
+        icon: gdsc,
+        iconBg: "#accbe1",
+        date: "August 2023 - April 2024",
+        points: [
+            "Empowered and lead 150+ fellow students to create innovative web solutions by providing guidance and mentorship",
+            "Assisting students to start their journey with web-technology by fostering a strong foundation in this field",
+            "Hosted and lead a hands-on Web Development webinar , attended by 115+ students, providing practical experience ",
+        ],
+    },
+]
 
 
 export const socialLinks = [
