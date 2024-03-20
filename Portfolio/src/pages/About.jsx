@@ -30,7 +30,14 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3>Work E</h3>
+        <h3 className='subhead-text'>Experience</h3>
+        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+          <p>I have worked on improving my skills while learning
+            and growing with other smart people</p>
+        </div>
+        <div className='mt-12 flex '>
+
+        </div>
       </div>
     </section>
   )
