@@ -127,28 +127,28 @@ export const socialLinks = [
 export const projects = [
     {
         iconUrl: Devit,
-        theme: 'btn-back-red',
+        theme: 'btn-back-black',
         name: 'DevIt',
         description: 'Developed a real-time code-editor with user authentication and authorisation having code-mirror functionality',
         link: 'https://github.com/AlishaKausheen/DevIt',
     },
     {
         iconUrl: food,
-        theme: 'btn-back-green',
+        theme: 'btn-back-blue',
         name: 'Give A Treat',
         description: 'Designed and developed a Restaurant menu showcasing website having modern UI and animation',
         link: 'https://github.com/AlishaKausheen/Give-A-Treat',
     },
     {
         iconUrl: chat,
-        theme: 'btn-back-blue',
+        theme: 'btn-back-pink',
         name: 'GossipBee',
         description: 'Designed and built a group chat application allowing 5-10 users to interact at the same time, having functionality of notifying them of other user exist and entry',
         link: 'https://github.com/AlishaKausheen/GossipBee',
     },
     {
         iconUrl: spotify,
-        theme: 'btn-back-pink',
+        theme: 'btn-back-green',
         name: 'Spotify Clone',
         description: 'Designed Modern UI of spotify having replay, playback and forward features',
         link: 'https://github.com/AlishaKausheen/Spotify-Clone',

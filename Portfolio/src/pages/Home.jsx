@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect , useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import Loader from '../components/Loader';
@@ -7,15 +7,27 @@ import Sky from '../models/Sky';
 import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
-
-{/* <div className='absolute top-20 left-0 right-0 z-10 flex items-center
-      justify-center'>
-  POPUP
-</div> */}
+import sakura from '../assets/sakura.mp3';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
+
+
+  const audioRef = useRef(new Audio(sakura));
+  audioRef.current.volume = 0.4;
+  audioRef.current.loop = true;
+
+  const [isPlayingSound, setIsPlayingSound] = useState(false);
+
+  useEffect(() => {
+    if (isPlayingSound) {
+      audioRef.current.play();
+    }
+    return () => {
+      audioRef.current.pause();
+    }
+  },[isPlayingSound])
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
