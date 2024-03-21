@@ -8,6 +8,7 @@ import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
 import sakura from '../assets/sakura.mp3';
+import { soundoff, soundon } from '../assets/icons';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -93,7 +94,13 @@ const Home = () => {
             rotation={[0, 20, 0]} />
         </Suspense>
         
-     </Canvas>
+      </Canvas>
+      <div className='absolute bottom-2 left-2'>
+        <img src={!isPlayingSound ? soundoff : soundon}
+          alt='sound'
+          className='w-10 h-10 cursor-pointer object-contain'
+        onClick={()=>setIsPlayingSound(!isPlayingSound)}/>
+      </div>
     </section>
   )
 }
