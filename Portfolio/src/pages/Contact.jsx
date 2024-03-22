@@ -5,6 +5,8 @@ import Fox from "../models/Fox";
 import Loader  from '../components/Loader';
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
+import { socialLinks } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -139,7 +141,14 @@ const Contact = () => {
         </Canvas>
 
       </div>
-    </section>
+      <footer className='grid    gap-2 object-cover ' style={{aspectRatio: 3/2}} >
+        {socialLinks.map((socialLink) => (
+          <a  className= 'grid gap-6 md:grid-rows-1 ' href={socialLink.link}><img className='w-8 h-16 sm: sm:h-18' src={socialLink.iconUrl} alt={socialLink.name}  /></a>
+        ))}
+      </footer>
+      
+      </section>
+      
   )
 }
 

@@ -16,6 +16,7 @@ import {
     react,
     redux,
     tailwindcss,
+    twitter
 
 } from "../assets/icons";
 
@@ -108,9 +109,9 @@ export const experiences = [
 
 export const socialLinks = [
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        name: 'Twitter',
+        iconUrl: twitter,
+        link: 'https://twitter.com/Alisha_kausheen',
     },
     {
         name: 'GitHub',
